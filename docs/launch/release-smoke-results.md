@@ -1,13 +1,19 @@
 # Release Smoke Results
 
-- [ ] Brand matrix complete
-- [ ] Public repo scaffold complete
-- [ ] English README check passed
-- [ ] Chinese README check passed
-- [ ] Example coverage check passed
-- [ ] quick_validate passed
-- [ ] gh skill publish --dry-run passed
-- [ ] GitHub release v0.1.0 exists
-- [ ] Plugin validation passed
-- [ ] Installed copy validates
-- [ ] Smoke prompts reviewed
+- [x] Brand matrix complete
+- [x] Public repo scaffold complete
+- [x] English README check passed
+- [x] Chinese README check passed
+- [x] Example coverage check passed
+- [x] quick_validate passed
+- [x] gh skill publish --dry-run passed
+- [x] GitHub release v0.1.0 exists
+- [x] Plugin validation passed
+- [x] Installed copy validates
+- [x] Smoke prompts reviewed
+
+## Notes
+
+- GitHub release URL: https://github.com/televgtamfe-coder/topdown-tutor/releases/tag/v0.1.0
+- Remote install validation used `knowledge-coach@v0.1.0`
+- Plugin package validated locally at `plugins/topdown-tutor`

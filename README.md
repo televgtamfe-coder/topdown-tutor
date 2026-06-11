@@ -115,6 +115,8 @@ Install from a local checkout:
 gh skill install D:\topdown-tutor knowledge-coach --from-local --dir C:\Users\MeetYou\.codex\skills --force
 ```
 
+Optional Codex plugin packaging now lives in `plugins/topdown-tutor`.
+
 ## Usage
 
 Example prompts:
@@ -167,10 +169,15 @@ For canonical-text topics it also includes:
 
 ```text
 topdown-tutor/
+|- .agents/
+|  `- plugins/
+|     `- marketplace.json
 |- assets/
 |- docs/
 |  `- launch/
 |- examples/
+|- plugins/
+|  `- topdown-tutor/
 `- skills/
    `- knowledge-coach/
       |- SKILL.md

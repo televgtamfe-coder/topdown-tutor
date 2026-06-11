@@ -1,0 +1,18 @@
+{
+  "name": "topdown-tutor",
+  "version": "0.1.0",
+  "description": "Topdown Tutor plugin",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Topdown Tutor",
+    "shortDescription": "Use Topdown Tutor in Codex.",
+    "longDescription": "Topdown Tutor adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Topdown Tutor."
+  }
+}

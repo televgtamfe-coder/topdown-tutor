@@ -115,6 +115,8 @@ gh skill preview televgtamfe-coder/topdown-tutor knowledge-coach
 gh skill install D:\topdown-tutor knowledge-coach --from-local --dir C:\Users\MeetYou\.codex\skills --force
 ```
 
+可选的 Codex plugin 打包目录现在位于 `plugins/topdown-tutor`。
+
 ## 使用方式
 
 你可以直接这样提：
@@ -167,10 +169,15 @@ gh skill install D:\topdown-tutor knowledge-coach --from-local --dir C:\Users\Me
 
 ```text
 topdown-tutor/
+|- .agents/
+|  `- plugins/
+|     `- marketplace.json
 |- assets/
 |- docs/
 |  `- launch/
 |- examples/
+|- plugins/
+|  `- topdown-tutor/
 `- skills/
    `- knowledge-coach/
       |- SKILL.md
