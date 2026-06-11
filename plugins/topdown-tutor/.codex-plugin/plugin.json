@@ -1,18 +1,18 @@
 {
   "name": "topdown-tutor",
-  "version": "0.1.0",
-  "description": "Topdown Tutor plugin",
+  "version": "0.1.3",
+  "description": "TopDown Tutor plugin for top-down learning workflows.",
   "author": {
-    "name": "Local developer"
+    "name": "shaoshengyi"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Topdown Tutor",
-    "shortDescription": "Use Topdown Tutor in Codex.",
-    "longDescription": "Topdown Tutor adds a local Codex plugin scaffold.",
-    "developerName": "Local developer",
-    "category": "Productivity",
+    "shortDescription": "Teach hard topics top-down in Codex.",
+    "longDescription": "TopDown Tutor adds a reusable top-down learning workflow with source gathering and understanding checks.",
+    "developerName": "shaoshengyi",
+    "category": "Education",
     "capabilities": [],
-    "defaultPrompt": "Help me use Topdown Tutor."
+    "defaultPrompt": "Teach me a hard topic from the top down and gather the right materials."
   }
 }
