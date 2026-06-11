@@ -1,5 +1,9 @@
 # 从0到通 TopDown Tutor
 
+<p align="center">
+  <img src="./assets/cover-v2.png" alt="从0到通 头图" width="100%" />
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/televgtamfe-coder/topdown-tutor)](https://github.com/televgtamfe-coder/topdown-tutor/releases)
 [![Codex Skill](https://img.shields.io/badge/Codex-knowledge--coach-black)](./skills/knowledge-coach/SKILL.md)
@@ -52,6 +56,12 @@ gh skill install D:\topdown-tutor knowledge-coach --from-local --dir C:\Users\Me
 ```
 
 可选的 Codex plugin 打包目录位于 `plugins/topdown-tutor`。
+
+## 传播素材
+
+- [Social preview 文案](./docs/launch/social-preview-copy.md)
+- [GitHub release 文案](./docs/launch/github-release-copy.md)
+- [演示脚本](./docs/launch/demo-script.md)
 
 ## 一次学习回合里，你会得到什么
 

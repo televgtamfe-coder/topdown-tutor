@@ -14,6 +14,7 @@
 
 ## Notes
 
-- GitHub release URL: https://github.com/televgtamfe-coder/topdown-tutor/releases/tag/v0.1.2
-- Remote install validation used `knowledge-coach@v0.1.2`
+- GitHub release URL: https://github.com/televgtamfe-coder/topdown-tutor/releases/tag/v0.1.3
+- Remote install validation used `knowledge-coach@v0.1.3`
 - Plugin package validated locally at `plugins/topdown-tutor`
+- Launch asset ready at `assets/cover-v2.png`

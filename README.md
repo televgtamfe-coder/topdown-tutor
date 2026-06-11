@@ -1,5 +1,9 @@
 # TopDown Tutor
 
+<p align="center">
+  <img src="./assets/cover-v2.png" alt="TopDown Tutor launch cover" width="100%" />
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/televgtamfe-coder/topdown-tutor)](https://github.com/televgtamfe-coder/topdown-tutor/releases)
 [![Codex Skill](https://img.shields.io/badge/Codex-knowledge--coach-black)](./skills/knowledge-coach/SKILL.md)
@@ -52,6 +56,12 @@ gh skill install D:\topdown-tutor knowledge-coach --from-local --dir C:\Users\Me
 ```
 
 Optional Codex plugin packaging lives in `plugins/topdown-tutor`.
+
+## Launch Kit
+
+- [Social preview copy](./docs/launch/social-preview-copy.md)
+- [GitHub release copy](./docs/launch/github-release-copy.md)
+- [Demo script](./docs/launch/demo-script.md)
 
 ## What You Get in One Session
 
