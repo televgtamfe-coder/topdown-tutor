@@ -1,99 +1,35 @@
 # TopDown Tutor
 
-[中文说明](./README.zh-CN.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Release](https://img.shields.io/github/v/release/televgtamfe-coder/topdown-tutor)](https://github.com/televgtamfe-coder/topdown-tutor/releases)
+[![Codex Skill](https://img.shields.io/badge/Codex-knowledge--coach-black)](./skills/knowledge-coach/SKILL.md)
 
-Teach hard topics from the top down, gather the right materials, and check whether the learner actually understood them.
+[简体中文](./README.zh-CN.md)
 
-TopDown Tutor starts with plain-language understanding, then goes deeper in layers. It keeps source quality high, supports overview + original text + decomposition, and adds focused understanding checks instead of dumping information.
+Teach hard topics so people actually understand them.
 
-## What It Is
+TopDown Tutor is a reusable learning skill for agent-driven teaching. It gathers the right materials, teaches from the top down, and checks whether the learner truly got it instead of stopping at "here is an explanation."
 
-TopDown Tutor is a reusable learning skill package built for agent-driven teaching.
+If most learning prompts feel too shallow, too random, or too dependent on the learner doing all the searching first, this project is built to fix exactly that.
 
-It helps with four jobs in one flow:
+## 30-Second Tour
 
-1. Turn a topic into a teachable map.
-2. Gather the right materials instead of making the learner search first.
-3. Explain the topic from simple to deep.
-4. Check understanding with a small number of high-value questions.
+- Start with a plain-language understanding, then deepen layer by layer.
+- Keep source authority high instead of quietly downgrading the material.
+- Teach in a fixed rhythm: overall picture, distinctive features, internal logic, top 10 knowledge points.
+- Support overview + original text + decomposition for canonical-text topics.
+- Ask up to three key checks instead of scattering many questions.
+- Give one simple example for every new knowledge point.
+- Translate technical or English terms on first mention with the original term, the Chinese translation, and a plain Chinese explanation.
 
-It is designed for topics that are easy to make confusing:
+## Why People Share It
 
-- technical topics such as APIs or React Hooks
-- concept-heavy topics such as probability
-- canonical-text topics such as *The Art of War*
-- theory-heavy topics that need both overview and source contact
+- It does not only explain. It combines material gathering, structured teaching, and understanding checks in one flow.
+- It works across very different topic types: APIs, concepts, historical ideas, and canonical texts.
+- It makes the explanation easier without lowering the authority level of the source.
+- Its output shape is stable enough to reuse as a skill, an agent workflow, or a teaching standard for a team.
 
-## Why It Is Different
-
-Most learning prompts stop at "explain this." TopDown Tutor is stricter.
-
-- It teaches in a fixed order: overall picture, distinctive features, internal logic, top 10 knowledge points.
-- It starts with plain-language understanding, but it does not downgrade source authority just because the explanation is easier.
-- It supports overview + original text + decomposition for canonical-text topics.
-- It asks up to three key checks instead of scattering many questions.
-- It gives one simple example for each new knowledge point.
-- It translates technical terms or English terms on first mention with the original term, Chinese translation, and a plain Chinese explanation.
-
-## How It Teaches
-
-The teaching rhythm is fixed:
-
-1. Zero-start overview when needed
-2. Overall picture
-3. Distinctive features
-4. Internal logic
-5. Top 10 knowledge points
-6. Key checks
-
-Each topic is explained in three layers:
-
-1. Plain-language understanding
-2. Accurate everyday explanation
-3. More technical explanation
-
-Every new knowledge point gets:
-
-- one simple example
-- one clearer term explanation if technical or English wording appears
-- one role or environment application when the learner context is known
-
-## How It Gets Materials
-
-TopDown Tutor does not treat all topics the same.
-
-- Library, framework, API, or tool topics prefer official docs, official examples, and primary references.
-- Broad concept topics prefer textbooks, review material, and reputable educational sources.
-- Historical, political, intellectual, or canonical-text topics prefer overview sources plus direct source material plus decomposition notes.
-- Applied topics prefer worked examples and practice tasks.
-
-The core rule is simple:
-
-**Make the explanation easier. Do not lower the authority level of the source unless the learner explicitly asks for that.**
-
-## Original Texts and Decomposition
-
-When a topic has important original texts, TopDown Tutor keeps both routes:
-
-1. Overview
-2. Original text
-3. Decomposition
-
-That means the learner gets orientation first, then contact with the source material, then a breakdown of:
-
-- historical context
-- core claim
-- plain-language meaning
-- important terms
-- why the text matters
-- common misunderstandings
-
-This avoids two common failures:
-
-- staying forever at summary level
-- throwing raw original text at the learner without support
-
-## Install
+## Quick Start
 
 GitHub CLI `gh 2.90.0+` is recommended for public installation.
 
@@ -115,11 +51,74 @@ Install from a local checkout:
 gh skill install D:\topdown-tutor knowledge-coach --from-local --dir C:\Users\MeetYou\.codex\skills --force
 ```
 
-Optional Codex plugin packaging now lives in `plugins/topdown-tutor`.
+Optional Codex plugin packaging lives in `plugins/topdown-tutor`.
 
-## Usage
+## What You Get in One Session
 
-Example prompts:
+- a one-sentence topic definition
+- a zero-start overview breakdown when the learner's starting point is unclear
+- the overall picture first
+- the distinctive features next
+- the internal logic after that
+- the top 10 most important knowledge points
+- one simple example for every new point
+- first-mention term support for technical or English wording
+- up to three key comprehension checks
+- one role- or environment-specific application when learner context is known
+
+## Teaching Rhythm
+
+Every topic follows the same top-down order:
+
+1. Zero-start overview when needed
+2. Overall picture
+3. Distinctive features
+4. Internal logic
+5. Top 10 knowledge points
+6. Key checks
+
+Each point is explained in three layers:
+
+1. Plain-language understanding
+2. Accurate everyday explanation
+3. More technical explanation
+
+## How It Gets Materials
+
+TopDown Tutor does not treat every topic the same.
+
+- Library, framework, API, and tool topics prefer official documentation, official examples, and other primary references.
+- Broad concept topics prefer textbooks, review material, and reputable educational sources.
+- Historical, political, intellectual, or canonical-text topics prefer overview material plus direct source material plus decomposition notes.
+- Applied topics prefer worked examples and practice tasks.
+
+The core rule is simple:
+
+**Make the explanation easier. Do not lower the authority level of the source unless the learner explicitly asks for that.**
+
+## Canonical-Text Mode
+
+When a topic has important original texts, TopDown Tutor keeps both routes:
+
+1. Overview
+2. Original text
+3. Decomposition
+
+That gives the learner orientation first, contact with the source second, and support for breaking the source into:
+
+- historical context
+- core claim
+- plain-language meaning
+- important terms
+- why the text matters
+- common misunderstandings
+
+This avoids two common failures:
+
+- staying forever at summary level
+- throwing raw original text at the learner without support
+
+## Copy-Paste Prompts
 
 ```text
 Teach me what an API is from the top down. Gather the right materials and check whether I really understood it.
@@ -137,25 +136,38 @@ Teach me probability from the top down with examples and key checks.
 Teach me The Art of War as a canonical-text topic using overview + original text + decomposition.
 ```
 
+```text
+Teach me a political or historical idea from the top down. Use overview + original text + decomposition when the topic has canonical texts, and keep the explanation plain without lowering source authority.
+```
+
+## Good Fits
+
+This skill works especially well for topics that are easy to oversimplify or overcomplicate:
+
+- technical topics such as APIs or React Hooks
+- concept-heavy topics such as probability
+- canonical-text topics such as *The Art of War*
+- theory-heavy topics that need both overview and source contact
+
 ## Example Topics
 
-See the ready-made examples in [`examples/`](./examples):
+Ready-made examples live in [`examples/`](./examples):
 
 - [`api.md`](./examples/api.md)
 - [`react-hooks.md`](./examples/react-hooks.md)
 - [`probability.md`](./examples/probability.md)
 - [`the-art-of-war.md`](./examples/the-art-of-war.md)
 
-## Output Format
+## Output Shape
 
-The expected output shape is:
+The standard output shape is:
 
 1. One-sentence topic definition
 2. Overall map
 3. Distinctive features
 4. Internal logic
 5. Top 10 knowledge points
-6. One simple example per new point
+6. One simple example for each new point
 7. Term translation support on first mention
 8. Up to three key checks
 
@@ -185,43 +197,58 @@ topdown-tutor/
       `- references/
 ```
 
-## Roadmap
-
-- Stabilize the public skill package
-- Publish the first GitHub release
-- Add the optional Codex plugin wrapper
-- Expand example coverage
-- Add release notes and contribution workflows
-
 ## FAQ
 
-### Does "plain-language" mean child-level material?
+### Does "plain-language understanding" mean child-level source material?
 
-No. It means easier explanation, not lower-authority material.
+No. It means the explanation should be easier to understand. It does not mean the sources should be child-oriented or lower in authority.
 
-### Does this only work for technical topics?
+### Does it ask too many questions?
 
-No. It also works for concept-heavy and canonical-text topics.
-
-### Does it always ask many questions?
-
-No. It keeps each round focused to up to three key checks.
+No. Each round stays focused to up to three key checks.
 
 ### Does it support original texts?
 
-Yes. That is one of the core design choices.
+Yes. That is one of the core design choices of the project.
+
+### Is it only for technical topics?
+
+No. It also works for concept-heavy, theoretical, historical, and canonical-text topics.
 
 ## Contributing
 
 Issues, examples, README improvements, and packaging fixes are all welcome.
 
-When contributing, keep the core rules stable:
+When contributing, keep these rules stable:
 
 - plain-language explanation first
 - no silent source downgrade
 - overview + original text + decomposition for canonical-text topics
 - up to three key checks per round
+- one simple example for every new knowledge point
 
 ## License
 
 This project is licensed under the MIT License. See [`LICENSE`](./LICENSE).
+
+## Real Session Example (Chinese)
+
+This transcript is intentionally kept in Chinese because the value is not only the content, but also the tightening rhythm of the teaching interaction.
+
+> Assistant: 我先按你是想问“毛泽东思想”来讲。
+>
+> Assistant: 如果把它用最通俗的方式讲，它就是：把马克思列宁主义的基本原理，放到中国当时的实际情况里去用，不是照抄，而是“按中国的地，种中国的庄稼”。
+>
+> Assistant: 你先试着用一句话说说看：毛泽东思想最核心的一点，你现在觉得是什么？
+>
+> User: 马列主义在中国当时情况下的应用，是因为是一套思想体系。
+>
+> Assistant: 很接近。我帮你压得更准一点：毛泽东思想，是把马克思列宁主义同中国具体实际结合起来形成的一套思想体系。
+>
+> Assistant: 如果把它再压缩成 4 个字，你觉得最重要的方法味道像什么？
+>
+> User: 实事求是。
+>
+> Assistant: 对。那你再用自己的话说说，什么叫“实事求是”？
+>
+> User: 从实际出发 靠研究弄清情况再决定方针。
