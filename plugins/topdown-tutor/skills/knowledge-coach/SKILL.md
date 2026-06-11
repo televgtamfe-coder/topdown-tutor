@@ -1,6 +1,7 @@
 ---
 name: knowledge-coach
 description: Use when the user wants to learn a topic from the top down, have difficult material explained in simpler language, be checked for understanding, or needs the agent to gather and filter learning materials as part of the lesson.
+license: MIT
 ---
 
 # Knowledge Coach

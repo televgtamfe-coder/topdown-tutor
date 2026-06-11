@@ -224,4 +224,4 @@ When contributing, keep the core rules stable:
 
 ## License
 
-No open-source license has been selected yet. Add one before broad external redistribution if you want clear reuse rights.
+This project is licensed under the MIT License. See [`LICENSE`](./LICENSE).
